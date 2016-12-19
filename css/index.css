@@ -1,0 +1,159 @@
+/**
+* Anthony Zheng
+* index.css
+*
+* Provides styling for index.html
+*************************************************/
+
+@font-face {
+    font-family: antique;
+    src: url("../font/antique.ttf");
+}
+
+@font-face {
+    font-family: slim;
+    src: url("../font/slim.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: slim;
+    font-size: 1.5em;
+    overflow-x: hidden;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: antique;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: antique;
+    font-size: 2em;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+#navbar {
+    position: fixed;
+    z-index: 10;
+    top: 10%;
+    left: 0;
+    max-width: 12vw;
+    max-height: 40vh;
+}
+
+#navbar > div {
+    transition: all 0.4s;
+}
+
+#navbar > div:hover {
+    background-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    padding: 1%;
+}
+
+#navbar > div:hover > a {
+    padding: 1vw;
+}
+
+.bg {
+    background-size: cover;
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.half-fill {
+    width: 100%;
+    height: 50vh;
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gradOp{
+    background: linear-gradient(rgba(0, 0, 0, 0.8),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.8),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0));
+}
+
+.homeContent {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: -webkit-translate(0, -50%);
+}
+
+.double-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: -webkit-translate(0, -50%);
+}
+
+.col {
+    max-width: 30vw;
+    margin-right: 5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.buffer {
+    padding: 5%;
+}
+
+#home {
+    background-image: url("../img/homepic.jpg");
+    background-attachment: fixed;
+}
+
+#about {
+    background-image: url("../img/rusticBakery.jpg");
+}
+
+#publication,
+#contact {
+    background-image: url("../img/grandma.jpg");
+    background-attachment: fixed;
+}

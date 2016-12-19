@@ -1,0 +1,80 @@
+/**
+ * Anthony Zheng
+ * recipe.css
+ *
+ * Provides stying for pie.html
+ ******************************************/
+
+body {
+    background-color: white;
+    text-align: left;
+    font-family: Georgia, Garamond, Sans-Serif;
+    font-size: 11pt;
+    color: rgba(64, 64, 64, 1);
+    background-image: url("http://cobweb.cs.uga.edu/~mehdi/teaching/4300/images/silverware.jpg");
+    background-attachment: fixed;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.comment {
+    background-color: rgba(255, 255, 168, 1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment > p {
+    font-style: italic;
+}
+
+.heading {
+    color: rgba(164, 164, 0, 1);
+    font-family: "Lucida Sans Unicode", Helvetica, Arial, Sans-Serif;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+}
+
+.heading-container {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.center {
+    text-align: center;
+}
+
+#main-header {
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.alt-heading {
+    font-size: 18pt;
+    text-decoration: underline;
+}
+
+#strike {
+    text-decoration: line-through;
+}
+
+.comment {
+    width: 90vw;
+}
+
+#cr {
+    text-align: right;
+    display: inline-block;
+}
+
+#valid-container {
+    display: inline-block;
+}
+
+#valid-container > a {
+    text-decoration: none;
+}
+
+.link {
+    color: rgba(164, 164, 0, 1);
+}
